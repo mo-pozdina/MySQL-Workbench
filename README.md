@@ -3,7 +3,7 @@
 ![скрин](https://raw.githubusercontent.com/mo-pozdina/MySQL-Workbench/main/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%20%D0%91%D0%94.png)
 __Список команд: CREATE, SELECT, WHERE, DROP, INSERT, UPDATE, ORDER BY, LIMIT, DELETE.__
 
-# CREATE
+## CREATE
 ```
 CREATE TABLE `amperka`.`kits` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -30,7 +30,7 @@ CREATE TABLE `amperka`.`kits` (
 ENGINE = InnoDB;
  ```
 ![скрин](Requests/CREATE2.png)
-# SELECT
+## SELECT
 ```
 SELECT * FROM amperka.kits;
  ```
@@ -46,7 +46,7 @@ SELECT * FROM kits;
 SELECT product, сollection FROM kits;
  ```
 ![скрин](Requests/SELECT3.png)
-# WHERE
+## WHERE
 ```
 SELECT * FROM kits WHERE id=2;
  ```
@@ -61,12 +61,12 @@ SELECT * FROM kits WHERE (product='CyberLight') OR (сollection='Arduino') LIMIT
 SELECT * FROM kits WHERE (price>6000) AND (region='Москва');
  ```
 ![скрин](Requests/WHERE_AND.png)
-# DROP
+## DROP
 ```
 DROP TABLE `amperka`.`kits`;
  ```
 ![скрин](Requests/DROP.png )
-# INSERT
+## INSERT
 ```
 INSERT INTO `amperka`.`kits` (`product`, `quantity`, `price`, `сollection`, `region`) VALUES ('Малина v4 (2 ГБ)', 'Сейчас нет', '18490', 'Raspberry Pi', 'Санкт-Петербург');
 INSERT INTO `amperka`.`kits` (`product`, `quantity`, `price`, `сollection`, `region`) VALUES ('Матрёшка Z', 'В наличии более 50 шт.', '6740', 'Arduino', 'Москва');
@@ -80,22 +80,22 @@ INSERT INTO `amperka`.`kits` (`product`, `quantity`, `price`, `сollection`, `re
 INSERT INTO `amperka`.`kits` (`product`, `quantity`, `price`, `сollection`, `region`) VALUES ('CyberLight', 'В наличии более 10 шт.', '640', 'Пайка', 'Доставка по России');
  ```
 ![скрин](Requests/INSERT2.png)
-# UPDATE
+## UPDATE
 ```
 UPDATE kits SET quantity ='В наличии всего 10 шт' Where id>5;
  ```
 ![скрин](Requests/UPDATE.png)
-# ORDER BY
+## ORDER BY
 ```
 SELECT * FROM kits ORDER BY price;
  ```
 ![скрин](Requests/ORDER_BY.png)
-# LIMIT
+## LIMIT
 ```
 SELECT * FROM kits LIMIT 2;
  ```
 ![скрин](Requests/LIMIT.png)
-# DELETE
+## DELETE
 ```
 DELETE FROM kits WHERE id>6;
  ```

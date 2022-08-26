@@ -1,6 +1,7 @@
 # MySQL-Workbench. 
-# Основы баз данных. Базовые запросы SQL. 
-Здесь можно посмотреть базовые запросы __SQL__ в программе __MySQL Workbench__ для таблицы: 
+__Основы баз данных. Базовые запросы SQL.__
+
+Здесь можно посмотреть базовые запросы __SQL__ в программе __MySQL Workbench__ для таблицы БД: 
 ![скрин](https://raw.githubusercontent.com/mo-pozdina/MySQL-Workbench/main/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%20%D0%91%D0%94.png)
 __Список команд: CREATE, SELECT, WHERE, DROP, INSERT, UPDATE, ORDER BY, LIMIT, DELETE.__
 
